@@ -1,14 +1,64 @@
-/* Colors to choose from 
-#636e72, #2d3436, #d63031, #00b894, 
-#b2bec3, #ff7675, #e17055, #00cec9,
-#ffeaa7, #81ecec
+/*
 
 Sourced from:
 https://flatuicolors.com/palette/us- American Palette by Kevin Yang */
+:root {
+    --light-pink: #fab1a0;
+    --orange: #e17055; 
+}
 
-/* FOR VISUAL REPRESENTATION ONLY */
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 body {
-    color: #636e72, #2d3436, #d63031, #00b894, 
-    #b2bec3, #ff7675, #e17055, #00cec9,
-    #ffeaa7, #81ecec;
-} 
+    font-family:'Times New Roman', Times, serif;
+    background-color: #b2bec3;
+}
+/* Header and Nav Style start */
+header {
+    background-color: #2d3436;
+    color: var(--light-pink);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-bottom: 5px solid var(--orange);
+}
+
+header h1 {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 5px 10px;
+
+}
+
+header nav {
+    width: 75%;
+    padding: 10px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    /* align-items: center; */
+    width: 100%;
+    list-style:none;
+}
+
+header a {
+    color: var(--light-pink);
+    text-decoration: none;
+}
+
+
+/* MOBILE-ONLY PROJECTS SLIDER */
+/* Hides tertiary-projects */
+.tertiary-project {
+    display: none;
+}
