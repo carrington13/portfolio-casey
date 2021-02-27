@@ -7,6 +7,7 @@ https://flatuicolors.com/palette/us- American Palette by Kevin Yang */
     --orange: #e17055; 
     --light-grey: #b2bec3;
     --dark-grey: #2d3436;
+    --black: rgb(0, 0, 0);
 }
 
 * {
@@ -64,39 +65,64 @@ header a {
 }
 /* Header Style end */
 
+/* Hero Style Start */
+.hero {
+    background-image: url(../images/gc-wide.jpg);
+    background-size: cover;
+    background-position: center center;
+    /*background-attachment: fixed;*/
+    background-repeat: no-repeat;
+    height: 200px;
+    
+}
+
+
 /* About-me Style start */
 /* About-me Style end */
 
-/* Projects Style start */
+/* Work Style start */
 
 /* Contact/Footer Style sorantart */
 /* Contact/Footer Style start */
 .contact {
-    height: 100px;
-    width: 90%;
-    margin-left: 80px;
+    height: 80px;
+    width: 100%;
+    margin-bottom: 20px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     flex-wrap: wrap; 
 }
 
-.contact h2 {
-    padding-right: 10px;
-    border-right: 3px solid var(--orange);
-    font-size: 50px;
-    width: 30%;
-    float: right;
+.contact address {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+
+
 }
 
-.contact address {
-    width: 70%;
+.contact p, .contact a {
+    text-decoration: none;
+    color: var(--black);
+    border-bottom: 3px solid var(--black);
+    padding-bottom: 3px;
 }
-.contact p {
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-}
+
 
 .main-project {
     background-image: url(../images/zion.jpg);
 }
+
+/* Utility class selectors */
+.section-title {
+        padding-right: 5px;
+        border-right: 3px solid var(--orange);
+        font-size: 30px;
+        width: 20%;
+        text-align: end;
+    }
