@@ -5,6 +5,8 @@ https://flatuicolors.com/palette/us- American Palette by Kevin Yang */
 :root {
     --light-pink: #fab1a0;
     --orange: #e17055; 
+    --light-grey: #b2bec3;
+    --dark-grey: #2d3436;
 }
 
 * {
@@ -15,50 +17,86 @@ https://flatuicolors.com/palette/us- American Palette by Kevin Yang */
 
 body {
     font-family:'Times New Roman', Times, serif;
-    background-color: #b2bec3;
+    background-color: var(--light-grey);
 }
 /* Header and Nav Style start */
 header {
-    background-color: #2d3436;
-    color: var(--light-pink);
+    background-color: var(--dark-grey);
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     border-bottom: 5px solid var(--orange);
 }
 
 header h1 {
-    width: 100%;
-    text-align: center;
+    width: 30%;
+    text-align: right;
     font-weight: bold;
-    font-size: 30px;
-    padding: 5px 10px;
+    font-size: 40px;
+    padding-right: 15px;
+    margin: 10px 10px 10px 0px;
+    background-color: var(--light-pink);
 
 }
 
 header nav {
-    width: 75%;
+    width: 40%;
     padding: 10px 0;
+    display: flex;
 }
 
 header nav ul {
     display: flex;
     flex-wrap:wrap;
-    justify-content: space-between;
-    /* align-items: center; */
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
     list-style:none;
+    font-size: 20px
 }
 
 header a {
     color: var(--light-pink);
     text-decoration: none;
+    border-bottom: 3px solid var(--orange);
+    padding: 5px;
+}
+/* Header Style end */
+
+/* About-me Style start */
+/* About-me Style end */
+
+/* Projects Style start */
+
+/* Contact/Footer Style sorantart */
+/* Contact/Footer Style start */
+.contact {
+    height: 100px;
+    width: 90%;
+    margin-left: 80px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap; 
 }
 
+.contact h2 {
+    padding-right: 10px;
+    border-right: 3px solid var(--orange);
+    font-size: 50px;
+    width: 30%;
+    float: right;
+}
 
-/* MOBILE-ONLY PROJECTS SLIDER */
-/* Hides tertiary-projects */
-.tertiary-project {
-    display: none;
+.contact address {
+    width: 70%;
+}
+.contact p {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.main-project {
+    background-image: url(../images/zion.jpg);
 }
