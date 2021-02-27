@@ -38,7 +38,6 @@ header h1 {
     padding-right: 15px;
     margin: 10px 10px 10px 0px;
     background-color: var(--light-pink);
-
 }
 
 header nav {
@@ -65,31 +64,112 @@ header a {
 }
 /* Header Style end */
 
-/* Hero Style Start */
+/* Hero/portrait Style Start */
 .hero {
     background-image: url(../images/gc-wide.jpg);
     background-size: cover;
     background-position: center center;
-    /*background-attachment: fixed;*/
     background-repeat: no-repeat;
-    height: 300px;
-    
+    height: 300px;  
 }
 
+.portrait {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    width: auto;
+    overflow: hidden;
+}
+
+.portrait img {
+    height: 200px;
+    width: 200px;
+    float: right;
+    border-radius: 100px;
+    border: solid 5px var(--orange);
+    margin: 0px 40px
+}
+    
+/* Hero/portrait Style End */
 
 /* About-me Style start */
+.bio {
+    height: 175px;
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.bio-text {
+    width: 75%;
+}
 /* About-me Style end */
 
 /* Work Style start */
+.work {
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap; 
+}
 
-/* Contact/Footer Style sorantart */
+.cards {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#card-1{
+    height: 450px;
+    width: 80%;
+}
+
+.card-grid {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    height: 200px;
+    width: 45%;
+    background-color: var(--dark-grey);
+    border: 5px solid var(--orange);
+    margin-bottom: 20px;
+    text-decoration: none;
+    display: flex;
+}
+
+.card div {
+    background-color: var(--orange); 
+    align-self: flex-end;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 18px;
+    color: var(--dark-grey);
+}
+.card h3 {
+    font-size: 32px;
+    font-weight: bold;
+    padding-bottom: 5px;    
+}
+
+/* Work Style end */
+
 /* Contact/Footer Style start */
+
 .contact {
     height: 80px;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     flex-wrap: wrap; 
 }
 
@@ -102,8 +182,6 @@ header a {
     font-style: normal;
     font-weight: 200;
     font-size: 18px;
-
-
 }
 
 .contact p, .contact a {
@@ -113,12 +191,10 @@ header a {
     padding-bottom: 3px;
 }
 
+/* Contact Style end */
 
-.main-project {
-    background-image: url(../images/zion.jpg);
-}
+/* Utility Class Selectors */
 
-/* Utility class selectors */
 .section-title {
         padding-right: 5px;
         border-right: 3px solid var(--orange);
