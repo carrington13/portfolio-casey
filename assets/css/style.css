@@ -71,6 +71,8 @@ header a {
     background-position: center center;
     background-repeat: no-repeat;
     height: 300px;  
+    border-bottom: 5px solid var(--orange);
+    margin-bottom: 15px;
 }
 
 .portrait {
@@ -88,14 +90,19 @@ header a {
     float: right;
     border-radius: 100px;
     border: solid 5px var(--orange);
-    margin: 0px 40px
+    margin: 0px 40px;
+    transition: transform .5s ease;
+}
+
+.portrait img:hover {
+    transform: scale(2);
 }
     
 /* Hero/portrait Style End */
 
 /* About-me Style start */
 .bio {
-    height: 175px;
+    height: auto;
     width: 100%;
     margin-bottom: 30px;
     display: flex;
@@ -105,6 +112,14 @@ header a {
 
 .bio-text {
     width: 75%;
+    display: flex;
+    justify-content: center;
+}
+
+.bio-text p {
+    width: 80%;
+    font-size: 18px;
+    line-height: 1.5;
 }
 /* About-me Style end */
 
@@ -139,6 +154,7 @@ header a {
 .card {
     height: 200px;
     width: 45%;
+    opacity: 0.3;
     background-color: var(--dark-grey);
     border: 5px solid var(--orange);
     margin-bottom: 20px;
@@ -158,6 +174,15 @@ header a {
     font-size: 32px;
     font-weight: bold;
     padding-bottom: 5px;    
+}
+
+#card-5 {
+    background-image: url(../images/run-buddy.png);
+    background-size: cover;
+}
+
+.card:hover {
+    opacity: 1.0;
 }
 
 /* Work Style end */
@@ -202,3 +227,19 @@ header a {
         width: 20%;
         text-align: end;
     }
+
+/* MEDIA QUERIES FOR SMALLER SCREENS */
+/* TODO: 
+AT MAX-WIDTH:980
+1. CARDS BREAK AT ~750, ADJUST CARD GRID TITLES
+2. BREAK HEADER NAV INTO TWO ROWS
+
+AT MAX-WIDTH:768
+1. CHECK?
+
+AT MAX-WIDTH:520 - MIN-WIDTH 320
+1. HEADER BREAKS
+2. ABOUT ME OVERFLOWS INTO WORK
+3. CHECK CONTACT
+
+*/
