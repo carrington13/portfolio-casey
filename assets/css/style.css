@@ -25,9 +25,7 @@ header {
     background-color: var(--dark-grey);
     width: 100%;
     height: auto;
-    display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     border-bottom: 5px solid var(--orange);
 }
 
@@ -48,8 +46,6 @@ header nav {
 }
 
 header nav ul {
-    display: flex;
-    flex-wrap:wrap;
     justify-content: space-around;
     align-items: center;
     width: 100%;
@@ -113,9 +109,7 @@ header a {
     height: auto;
     width: 100%;
     margin-bottom: 30px;
-    display: flex;
     justify-content: flex-start;
-    flex-wrap: wrap;
 }
 
 .bio-text {
@@ -135,16 +129,12 @@ header a {
 .work {
     width: 100%;
     margin-bottom: 30px;
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap; 
+    justify-content: flex-start;   
 }
 
 .cards {
     width: 75%;
-    display: flex;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 #card-1{
@@ -154,8 +144,6 @@ header a {
 
 .card-grid {
     width: 80%;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -201,15 +189,11 @@ header a {
     height: 80px;
     width: 100%;
     margin-bottom: 30px;
-    display: flex;
     justify-content: flex-start;
-    flex-wrap: wrap; 
 }
 
 .contact address {
     width: 75%;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     font-style: normal;
@@ -236,6 +220,11 @@ header a {
         width: 20%;
         text-align: end;
     }
+
+.flex-with-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 /* MEDIA QUERIES*/
 
