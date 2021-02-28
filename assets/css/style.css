@@ -24,6 +24,7 @@ body {
 header {
     background-color: var(--dark-grey);
     width: 100%;
+    height: auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -75,6 +76,16 @@ header a {
     margin-bottom: 15px;
 }
 
+.hero h1 {
+        width: 40%;
+        text-align: right;
+        font-weight: bold;
+        font-size: 24px;
+        padding: 5px 15px;
+        margin: 10px 10px 10px 0px;
+        background-color: var(--light-pink);
+        display: none;
+}
 .portrait {
     display: flex;
     justify-content: flex-end;
@@ -94,9 +105,6 @@ header a {
     transition: transform .5s ease;
 }
 
-.portrait img:hover {
-    transform: scale(2);
-}
     
 /* Hero/portrait Style End */
 
@@ -154,7 +162,6 @@ header a {
 .card {
     height: 200px;
     width: 45%;
-    opacity: 0.3;
     background-color: var(--dark-grey);
     border: 5px solid var(--orange);
     margin-bottom: 20px;
@@ -184,6 +191,7 @@ header a {
 .card:hover {
     opacity: 1.0;
 }
+
 
 /* Work Style end */
 
@@ -222,24 +230,131 @@ header a {
 
 .section-title {
         padding-right: 5px;
+        padding-left: 10px;
         border-right: 3px solid var(--orange);
         font-size: 30px;
         width: 20%;
         text-align: end;
     }
 
-/* MEDIA QUERIES FOR SMALLER SCREENS */
-/* TODO: 
-AT MAX-WIDTH:980
-1. CARDS BREAK AT ~750, ADJUST CARD GRID TITLES
-2. BREAK HEADER NAV INTO TWO ROWS
+/* MEDIA QUERIES*/
 
-AT MAX-WIDTH:768
-1. CHECK?
+/* For Fine Pointer Accuracy */
+@media (pointer: fine) {
+    .portrait img:hover {
+        transform: scale(2);
+    }
 
-AT MAX-WIDTH:520 - MIN-WIDTH 320
-1. HEADER BREAKS
-2. ABOUT ME OVERFLOWS INTO WORK
-3. CHECK CONTACT
+    .card {
+        opacity: 0.3;
+    }
+    
+    .contact a:hover, header a:hover {
+        color: rgb(255, 255, 255);
+        transform: scale(1.5);
+    }
+ 
+}
 
-*/
+/* For Screens 1200px and below */
+@media screen and (max-width: 1200px) {
+    header nav {
+        width: 60%;
+    }
+}
+
+/* For Screens 768px and below */
+@media screen and (max-width: 768px) {
+    .card div {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .card h3 {
+        font-size: 20px;
+    }
+
+    #card-1 {
+        height: 300px;
+    }
+
+    .contact p, .contact a {
+        width: 40%;
+    }
+}
+
+/* For Screens 575px and below */
+@media screen and (max-width: 575px) {
+    header nav {
+        width: 100%;
+    }
+
+    header nav ul {
+        font-size: 16px;
+    }
+
+    header h1 {
+        display: none;
+    }
+
+    .hero {
+        height: 150px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .hero h1 {
+        display: inline-flex;
+        width: 40%;
+    }
+
+    .portrait img {
+        height: 120px;
+        width: 120px;
+        margin: auto;
+    }
+
+    .contact {
+        height: auto;
+    }
+    .contact address {
+        font-size: 14px;
+    }
+    
+    .section-title {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .bio-text p {
+        font-size: 13px;
+        line-height: 1.2;
+    }
+
+    .section-title {
+        writing-mode: vertical-lr;
+        text-orientation:upright;
+        letter-spacing: -5px;
+        text-align: start;
+        font-size: 20px;
+    }
+    
+    .card div {
+        padding: 0;
+    }
+    
+    .card h3 {
+        font-size: 14px;
+        padding: 0;
+    }
+
+    #card-1 {
+        height: 200px
+    }
+
+    .card {
+        height: 100px;
+    }
+}
