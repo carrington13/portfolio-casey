@@ -171,6 +171,11 @@ header a {
     padding-bottom: 5px;    
 }
 
+#card-1 {
+    background-image: url(../images/motivation-manager.png);
+    background-size: cover;
+}
+
 #card-5 {
     background-image: url(../images/run-buddy.png);
     background-size: cover;
