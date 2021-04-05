@@ -11,5 +11,8 @@ A portfolio showcasing my, Casey Arrington, coding work. It contains a short bio
 ## Deployed Url
 https://carrington13.github.io/portfolio-casey/
 
+## Screenshot
+![screenshot](assets/images/deployed-screenshot.png)
+
 ## Contribution
 Made entirely by Casey Arrington
