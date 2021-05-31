@@ -172,6 +172,11 @@ header a {
 }
 
 #card-1 {
+    background-image: url(../images/qrater.png);
+    background-size: cover;
+}
+
+#card-2 {
     background-image: url(../images/motivation-manager.png);
     background-size: cover;
 }
